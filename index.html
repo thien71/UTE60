@@ -1,0 +1,1879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./base.css">
+    <link rel="stylesheet" href="./main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4e5999a8c6.js" crossorigin="anonymous"></script>
+    <title>UTE UDN kỷ niệm 60 năm thành lập</title>
+</head>
+
+<body>
+    <div id="wrapped">
+        <header class="header">
+            <div class="row container header__cover">
+                <div class="col-4 header__left">
+                    <i class="fa-solid fa-bars menu__icon-category" onclick="isOpenAllMenuMobile()"></i>
+                    <i class="fa-solid fa-xmark menu__icon-xmark" onclick="isCloseAllMenuMobile()"></i>
+                    <a href="#!" class="header__cover-img">
+                        <img src="https://s1.vnecdn.net/vnexpress/restruct/i/v673/v2_2019/pc/graphics/logo.svg" alt="Logo" class="header-img">
+                    </a>
+                    <span class="header__time t-0">Thứ bảy, 18/11/2022</span>
+                </div>
+
+                <div class="col-8 m-u header__right">
+                    <ul class="header__list">
+                        <li class="header__list-item">
+                            <a href="#!" class="header__item-link">
+                                <i class="fa-regular fa-clock header__icon"></i>
+                                <span>Mới nhất</span>
+                            </a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="#!" class="header__item-link">
+                                <i class="fa-solid fa-location-dot header__icon"></i>
+                                <span>Tin theo khu vực</span>
+                            </a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="#!" class="header__item-link">
+                                <i class="fa-solid fa-e header__icon header__icon-e"></i>
+                                <span>Iternational</span>
+                            </a>
+                        </li>
+                        <li class="header__list-item t-0">
+                            <form action="" class="header__item-link header__form">
+                                <input type="text" class="header__search" placeholder="Tìm kiếm">
+                                <button type="button" class="header__btn">
+                                    <i class="fa-solid fa-magnifying-glass header__icon-search"></i>
+                                </button>
+                            </form>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="#!" class="header__item-link">
+                                <i class="fa-solid fa-user header__icon"></i>
+                                <span class="header__login-text">Đăng nhập</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        
+        <div class="nav__total">
+            <nav class="t-0">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            <i class="fa-solid fa-house nav__icon"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="https://vnexpress.net/tin-tuc-24h" class="nav__link">
+                            Mới nhất
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="https://vnexpress.net/thoi-su" class="nav__link">
+                            Thời sự
+                        </a>
+                        <ul class="subnav__list">
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/thoi-su/chinh-tri" class="subnav__link">Chính trị</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/thoi-su/dan-sinh" class="subnav__link">Dân sinh</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/thoi-su/lao-dong-viec-lam" class="subnav__link">Lao động - việc làm</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/thoi-su/giao-thong" class="subnav__link">Giao thông</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/thoi-su/mekong" class="subnav__link">Mekong</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/thoi-su/quy-hy-vong" class="subnav__link">Quỹ hy vọng</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a href="https://vnexpress.net/goc-nhin" class="nav__link">
+                            Góc nhìn
+                        </a>
+                        <ul class="subnav__list">
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/goc-nhin/binh-luan-nhieu" class="subnav__link">Bình luận nhiều</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/goc-nhin/chinh-tri-chinh-sach" class="subnav__link">Chính trị & chính sách</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/goc-nhin/y-te-suc-khoe" class="subnav__link">Y tế & sức khỏe</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/goc-nhin/kinh-doanh-quan-tri" class="subnav__link">Kinh doanh & quản trị</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/goc-nhin/giao-duc-tri-thuc" class="subnav__link">Giáo dục & tri thức</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/goc-nhin/moi-truong" class="subnav__link">Môi trường</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/goc-nhin/van-hoa-loi-song" class="subnav__link">Văn hóa & Lối sống</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/goc-nhin/covid-19" class="subnav__link">Covid</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/goc-nhin/tac-gia" class="subnav__link">Tác giả</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a href="https://vnexpress.net/the-gioi" class="nav__link">
+                            Thế giới
+                        </a>
+                        <ul class="subnav__list">
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/the-gioi/tu-lieu" class="subnav__link">Tư liệu</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/the-gioi/phan-tich" class="subnav__link">Phân tích</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/the-gioi/nguoi-viet-5-chau" class="subnav__link">Người Việt 5 châu</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/the-gioi/cuoc-song-do-day" class="subnav__link">Cuộc sống đó đây</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/the-gioi/quan-su" class="subnav__link">Quân sự</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a href="https://vnexpress.net/video" class="nav__link">
+                            Video
+                        </a>
+                        <ul class="subnav__list">
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/video/thoi-su" class="subnav__link">Thời sự</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/video/nhip-song" class="subnav__link">Nhịp sống</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/video/food" class="subnav__link">Food</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/video/toi-ke" class="subnav__link">Tôi kể</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/video/chuyen-nui-rung" class="subnav__link">Chuyện núi rừng</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/video/phap-luat" class="subnav__link">Pháp luật</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/video/giai-tri" class="subnav__link">Giải trí</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/video/the-thao" class="subnav__link">Thể thao</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/video/so-hoa" class="subnav__link">Số hóa</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/video/xe" class="subnav__link">Xe</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/video/suc-khoe" class="subnav__link">Sức khỏe</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/video/du-lich" class="subnav__link">Du lịch</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/video/the-gioi" class="subnav__link">Thế giới</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/video/khoa-hoc" class="subnav__link">Khoa học</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a href="https://vnexpress.net/podcast" class="nav__link">
+                            Podcasts
+                        </a>
+                        <ul class="subnav__list">
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/podcast/tien-lam-gi" class="subnav__link">Tiền làm gì ?</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/podcast/tai-chinh-ca-nhan" class="subnav__link">Tài chính cá nhân</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/podcast/giai-ma" class="subnav__link">Giải mã</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/podcast/hop-den" class="subnav__link">Hộp đen</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/podcast/ho-noi-gi" class="subnav__link">Họ nói gì ?</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/podcast/ly-hon" class="subnav__link">Ly hôn</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/podcast/tham-thi" class="subnav__link">Thầm thì</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/podcast/up-mo-18" class="subnav__link">Úp mở 18+</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/podcast/ban-on-khong" class="subnav__link">Bạn ổn không ?</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/podcast/toi-trong-guong" class="subnav__link">Tôi trong gương</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/podcast/chuyen-di-lam" class="subnav__link">Chuyện đi làm</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/podcast/diem-tin" class="subnav__link">Điểm tin</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/podcast/nguy-co" class="subnav__link">Nguy cơ</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a href="https://vnexpress.net/kinh-doanh" class="nav__link">
+                            Kinh doanh
+                        </a>
+                        <ul class="subnav__list">
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/kinh-doanh/quoc-te" class="subnav__link">Quốc tế</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/kinh-doanh/doanh-nghiep" class="subnav__link">Doanh nghiệp</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/kinh-doanh/chung-khoan" class="subnav__link">Chứng khoán</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/kinh-doanh/bat-dong-san" class="subnav__link">Bất động sản</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/kinh-doanh/ebank" class="subnav__link">Ebank</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/kinh-doanh/vi-mo" class="subnav__link">Vĩ mô</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/kinh-doanh/tien-cua-toi" class="subnav__link">Tiền của tôi</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/kinh-doanh/bao-hiem" class="subnav__link">Bảo hiểm</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/kinh-doanh/hang-hoa" class="subnav__link">Hàng hóa</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/kinh-doanh/vhome" class="subnav__link">Vhome</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/kinh-doanh/ebox" class="subnav__link">eBox</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a href="https://vnexpress.net/khoa-hoc" class="nav__link">
+                            Khoa học
+                        </a>
+                        <ul class="subnav__list">
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/khoa-hoc/khoa-hoc-trong-nuoc" class="subnav__link">Khoa học trong nước</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/khoa-hoc/tin-tuc" class="subnav__link">Tin tức</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/khoa-hoc/phat-minh" class="subnav__link">Phát minh</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/khoa-hoc/ung-dung" class="subnav__link">Ứng dụng</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/khoa-hoc/the-gioi-tu-nhien" class="subnav__link">Thế giới tự nhiên</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/khoa-hoc/thuong-thuc" class="subnav__link">Thường thức</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/khoa-hoc/cuoc-thi-sang-kien-khoa-hoc" class="subnav__link">Sáng kiến khoa học</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a href="https://vnexpress.net/giai-tri" class="nav__link">
+                            Giải trí
+                        </a>
+                        <ul class="subnav__list">
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/giai-tri/gioi-sao" class="subnav__link">Giới sao</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/giai-tri/video" class="subnav__link">Video</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/giai-tri/phim" class="subnav__link">Phim</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/giai-tri/nhac" class="subnav__link">Nhạc</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/giai-tri/thoi-trang" class="subnav__link">Thời trang</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/giai-tri/lam-dep" class="subnav__link">Làm đẹp</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/giai-tri/sach" class="subnav__link">Sách</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/giai-tri/the-gioi-my-thuat" class="subnav__link">Thế giới mỹ thuật</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a href="https://vnexpress.net/the-thao" class="nav__link">
+                            Thể thao
+                        </a>
+                        <ul class="subnav__list">
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/the-thao/bong-da" class="subnav__link">Bóng đá</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/the-thao/world-cup-2022" class="subnav__link">World Cup 2022</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/the-thao/marathon" class="subnav__link">Marathon</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/the-thao/lich-thi-dau" class="subnav__link">Lịch thi đấu</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/the-thao/tennis" class="subnav__link">Tennis</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/the-thao/bundesliga" class="subnav__link">Bundesliga</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/the-thao/cac-mon-khac" class="subnav__link">Các môn khác</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/the-thao/hau-truong" class="subnav__link">Hậu trường</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/the-thao/video" class="subnav__link">Video</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/the-thao/anh" class="subnav__link">Ảnh</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/the-thao/tuong-thuat" class="subnav__link">Tường thuật</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a href="https://vnexpress.net/phap-luat" class="nav__link">
+                            Pháp luật
+                        </a>
+                        <ul class="subnav__list">
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/phap-luat/ho-so-pha-an" class="subnav__link">Hồ sơ phá án</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/phap-luat/tu-van" class="subnav__link">Tư vấn</a>
+                            </li>   
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/phap-luat/video" class="subnav__link">Video</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item nav__item--selected">
+                        <a href="https://vnexpress.net/giao-duc" class="nav__link">
+                            Giáo dục
+                        </a>
+                        <ul class="subnav__list">
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/giao-duc/tin-tuc" class="subnav__link">Tin tức</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/giao-duc/tuyen-sinh" class="subnav__link">Tuyển sinh</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/giao-duc/chan-dung" class="subnav__link">Chân dung</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/giao-duc/du-hoc" class="subnav__link">Du học</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/giao-duc/hoc-tieng-anh" class="subnav__link">Học tiếng Anh</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/giao-duc/trac-nghiem" class="subnav__link">Trắc nghiệm</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/giao-duc/giao-duc-40" class="subnav__link">Giáo dục 4.0</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a href="https://vnexpress.net/suc-khoe" class="nav__link">
+                            Sức khỏe
+                        </a>
+                        <ul class="subnav__list">
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/suc-khoe/tin-tuc" class="subnav__link">Tin tức</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/suc-khoe/tu-van" class="subnav__link">Tư vấn</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/suc-khoe/khoe-dep" class="subnav__link">Khỏe đẹp</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/suc-khoe/dinh-duong" class="subnav__link">Dinh dưỡng</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/suc-khoe/dan-ong" class="subnav__link">Đàn ông</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/suc-khoe/cac-benh" class="subnav__link">Các bệnh</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/suc-khoe/di-chung-covid" class="subnav__link">Di chứng covid</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/suc-khoe/vaccine" class="subnav__link">Vaccine</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a href="https://vnexpress.net/doi-song" class="nav__link">
+                            Đời sống
+                        </a>
+                        <ul class="subnav__list">
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/doi-song/to-am" class="subnav__link">Tổ ấm</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/doi-song/bai-hoc-song" class="subnav__link">Bài học sống</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/doi-song/nha" class="subnav__link">Nhà</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/doi-song/tin-dung" class="subnav__link">Tiêu dùng</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/doi-song/cooking" class="subnav__link">Cooking</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a href="https://vnexpress.net/du-lich" class="nav__link">
+                            Du lịch
+                        </a>
+                        <ul class="subnav__list">
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/du-lich/diem-den" class="subnav__link">Điểm đến</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/du-lich/am-thuc" class="subnav__link">Ẩm thực</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/du-lich/tu-van" class="subnav__link">Tư vấn</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/du-lich/cam-nang" class="subnav__link">Cẩm nang</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/du-lich/dau-chan" class="subnav__link">Dấu chân</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/du-lich/anh" class="subnav__link">Ảnh</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/du-lich/mo-cua-du-lich" class="subnav__link">Mở cửa du lịch</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a href="https://vnexpress.net/so-hoa" class="nav__link">
+                            Số hóa
+                        </a>
+                        <ul class="subnav__list">
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/so-hoa/cong-nghe" class="subnav__link">Công nghệ</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/so-hoa/san-pham" class="subnav__link">Sản phẩm</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/so-hoa/blockchain" class="subnav__link">Blockchain</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/so-hoa/startup" class="subnav__link">Startup</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/so-hoa/tech-awards-2022" class="subnav__link">Tech Awards 2022</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a href="https://vnexpress.net/oto-xe-may" class="nav__link">
+                            Xe
+                        </a>
+                        <ul class="subnav__list">
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/oto-xe-may/thi-truong" class="subnav__link">Thị trường</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/oto-xe-may/thi-bang-lai" class="subnav__link">Thi bằng lái</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/oto-xe-may/cam-lai" class="subnav__link">Cầm lái</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/oto-xe-may/dien-dan" class="subnav__link">Diễn đàn</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/oto-xe-may/v-car" class="subnav__link">V-Cars</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/oto-xe-may/mua-ban" class="subnav__link">Mua bán</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/oto-xe-may/car-awards-2022" class="subnav__link">Car Awards 2022</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a href="https://vnexpress.net/y-kien" class="nav__link">
+                            Ý kiến
+                        </a>
+                        <ul class="subnav__list">
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/y-kien/thoi-su" class="subnav__link">Thời sự</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="https://vnexpress.net/y-kien/doi-song" class="subnav__link">Đời sống</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link" onclick="isOpenAllMenu()">
+                            Tất cả
+                            <i class="fa-solid fa-bars nav__icon"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Menu ALL -->
+            <div class="menu__all">
+                <div class="row menu__all-cover">
+                    <div class="menu__all-header t-0">
+                        <div class="menu__all-header-title">Tất cả chuyên mục</div>
+                        <span class="menu__all-header-close" onclick="isCloseAllMenu()">
+                            <span class="menu__all-header-close-text">Đóng</span>
+                            <i class="fa-solid fa-xmark menu__all-header-close-icon"></i>
+                        </span>
+                    </div>
+                    <div class="row menu__all-left m-12">   
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-2 t-4 m-12">
+                                    <span class="menu__all-title" onclick="isOpenCloseSubMenu(1)">Thời sự</span>
+                                    <ul class="menu__all-list menu__all-list1">
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/thoi-su/chinh-tri" class="menu__all-link">Chính trị</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/thoi-su/dan-sinh" class="menu__all-link">Dân sinh</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/thoi-su/lao-dong-viec-lam" class="menu__all-link">Lao động - việc làm</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/thoi-su/giao-thong" class="menu__all-link">Giao thông</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/thoi-su/mekong" class="menu__all-link">Mekong</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/thoi-su/quy-hy-vong" class="menu__all-link">Quỹ hy vọng</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-2 t-4 m-12">
+                                    <span class="menu__all-title" onclick="isOpenCloseSubMenu(2)">Góc nhìn</span>
+                                    <ul class="menu__all-list menu__all-list2">
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/goc-nhin/binh-luan-nhieu" class="menu__all-link">Bình luận nhiều</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/goc-nhin/chinh-tri-chinh-sach" class="menu__all-link">Chính trị & chính sách</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/goc-nhin/y-te-suc-khoe" class="menu__all-link">Y tế & sức khỏe</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/goc-nhin/kinh-doanh-quan-tri" class="menu__all-link">Kinh doanh & quản trị</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/goc-nhin/giao-duc-tri-thuc" class="menu__all-link">Giáo dục & tri thức</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/goc-nhin/moi-truong" class="menu__all-link">Môi trường</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/goc-nhin/van-hoa-loi-song" class="menu__all-link">Văn hóa & Lối sống</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/goc-nhin/covid-19" class="menu__all-link">Covid</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/goc-nhin/tac-gia" class="menu__all-link">Tác giả</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-2 t-4 m-12">
+                                    <span class="menu__all-title" onclick="isOpenCloseSubMenu(3)">Thế giới</span>
+                                    <ul class="menu__all-list menu__all-list3">
+                                        
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/the-gioi/tu-lieu" class="menu__all-link">Tư liệu</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/the-gioi/phan-tich" class="menu__all-link">Phân tích</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/the-gioi/nguoi-viet-5-chau" class="menu__all-link">Người Việt 5 châu</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/the-gioi/cuoc-song-do-day" class="menu__all-link">Cuộc sống đó đây</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/the-gioi/quan-su" class="menu__all-link">Quân sự</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-2 t-4 m-12">
+                                    <span class="menu__all-title" onclick="isOpenCloseSubMenu(4)">Video</span>
+                                    <ul class="menu__all-list menu__all-list4">
+                                
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/video/thoi-su" class="menu__all-link">Thời sự</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/video/nhip-song" class="menu__all-link">Nhịp sống</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/video/food" class="menu__all-link">Food</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/video/toi-ke" class="menu__all-link">Tôi kể</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/video/chuyen-nui-rung" class="menu__all-link">Chuyện núi rừng</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/video/phap-luat" class="menu__all-link">Pháp luật</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/video/giai-tri" class="menu__all-link">Giải trí</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/video/the-thao" class="menu__all-link">Thể thao</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/video/so-hoa" class="menu__all-link">Số hóa</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/video/xe" class="menu__all-link">Xe</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/video/suc-khoe" class="menu__all-link">Sức khỏe</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/video/du-lich" class="menu__all-link">Du lịch</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/video/the-gioi" class="menu__all-link">Thế giới</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/video/khoa-hoc" class="menu__all-link">Khoa học</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-2 t-4 m-12">
+                                    <span class="menu__all-title" onclick="isOpenCloseSubMenu(5)">Podcasts</span>
+                                    <ul class="menu__all-list menu__all-list5">
+                
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/podcast/tien-lam-gi" class="menu__all-link">Tiền làm gì ?</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/podcast/tai-chinh-ca-nhan" class="menu__all-link">Tài chính cá nhân</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/podcast/giai-ma" class="menu__all-link">Giải mã</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/podcast/hop-den" class="menu__all-link">Hộp đen</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/podcast/ho-noi-gi" class="menu__all-link">Họ nói gì ?</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/podcast/ly-hon" class="menu__all-link">Ly hôn</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/podcast/tham-thi" class="menu__all-link">Thầm thì</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/podcast/up-mo-18" class="menu__all-link">Úp mở 18+</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/podcast/ban-on-khong" class="menu__all-link">Bạn ổn không ?</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/podcast/toi-trong-guong" class="menu__all-link">Tôi trong gương</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/podcast/chuyen-di-lam" class="menu__all-link">Chuyện đi làm</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/podcast/diem-tin" class="menu__all-link">Điểm tin</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/podcast/nguy-co" class="menu__all-link">Nguy cơ</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-2 t-4 m-12">
+                                    <span class="menu__all-title" onclick="isOpenCloseSubMenu(6)">Kinh doanh</span>
+                                    <ul class="menu__all-list menu__all-list6">
+                                      
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/kinh-doanh/quoc-te" class="menu__all-link">Quốc tế</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/kinh-doanh/doanh-nghiep" class="menu__all-link">Doanh nghiệp</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/kinh-doanh/chung-khoan" class="menu__all-link">Chứng khoán</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/kinh-doanh/bat-dong-san" class="menu__all-link">Bất động sản</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/kinh-doanh/ebank" class="menu__all-link">Ebank</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/kinh-doanh/vi-mo" class="menu__all-link">Vĩ mô</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/kinh-doanh/tien-cua-toi" class="menu__all-link">Tiền của tôi</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/kinh-doanh/bao-hiem" class="menu__all-link">Bảo hiểm</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/kinh-doanh/hang-hoa" class="menu__all-link">Hàng hóa</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/kinh-doanh/vhome" class="menu__all-link">Vhome</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/kinh-doanh/ebox" class="menu__all-link">eBox</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-2 t-4 m-12">
+                                    <span class="menu__all-title" onclick="isOpenCloseSubMenu(7)">Khoa học</span>
+                                    <ul class="menu__all-list menu__all-list7">
+                                      
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/khoa-hoc/khoa-hoc-trong-nuoc" class="menu__all-link">Khoa học trong nước</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/khoa-hoc/tin-tuc" class="menu__all-link">Tin tức</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/khoa-hoc/phat-minh" class="menu__all-link">Phát minh</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/khoa-hoc/ung-dung" class="menu__all-link">Ứng dụng</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/khoa-hoc/the-gioi-tu-nhien" class="menu__all-link">Thế giới tự nhiên</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/khoa-hoc/thuong-thuc" class="menu__all-link">Thường thức</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/khoa-hoc/cuoc-thi-sang-kien-khoa-hoc" class="menu__all-link">Sáng kiến khoa học</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-2 t-4 m-12">
+                                    <span class="menu__all-title" onclick="isOpenCloseSubMenu(8)">Giải trí</span>
+                                    <ul class="menu__all-list menu__all-list8">
+                                        
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/giai-tri/gioi-sao" class="menu__all-link">Giới sao</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/giai-tri/video" class="menu__all-link">Video</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/giai-tri/phim" class="menu__all-link">Phim</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/giai-tri/nhac" class="menu__all-link">Nhạc</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/giai-tri/thoi-trang" class="menu__all-link">Thời trang</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/giai-tri/lam-dep" class="menu__all-link">Làm đẹp</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/giai-tri/sach" class="menu__all-link">Sách</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/giai-tri/the-gioi-my-thuat" class="menu__all-link">Thế giới mỹ thuật</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-2 t-4 m-12">
+                                    <span class="menu__all-title" onclick="isOpenCloseSubMenu(9)">Thể thao</span>
+                                    <ul class="menu__all-list menu__all-list9">
+                                        
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/the-thao/bong-da" class="menu__all-link">Bóng đá</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/the-thao/world-cup-2022" class="menu__all-link">World Cup 2022</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/the-thao/marathon" class="menu__all-link">Marathon</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/the-thao/lich-thi-dau" class="menu__all-link">Lịch thi đấu</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/the-thao/tennis" class="menu__all-link">Tennis</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/the-thao/bundesliga" class="menu__all-link">Bundesliga</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/the-thao/cac-mon-khac" class="menu__all-link">Các môn khác</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/the-thao/hau-truong" class="menu__all-link">Hậu trường</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/the-thao/video" class="menu__all-link">Video</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/the-thao/anh" class="menu__all-link">Ảnh</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/the-thao/tuong-thuat" class="menu__all-link">Tường thuật</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-2 t-4 m-12">
+                                    <span class="menu__all-title" onclick="isOpenCloseSubMenu(10)">Pháp luật</span>
+                                    <ul class="menu__all-list menu__all-list10">
+                                        
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/phap-luat/ho-so-pha-an" class="menu__all-link">Hồ sơ phá án</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/phap-luat/tu-van" class="menu__all-link">Tư vấn</a>
+                                        </li>   
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/phap-luat/video" class="menu__all-link">Video</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-2 t-4 m-12">
+                                    <span class="menu__all-title" onclick="isOpenCloseSubMenu(11)">Giáo dục</span>
+                                    <ul class="menu__all-list menu__all-list11">
+                                     
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/giao-duc/tin-tuc" class="menu__all-link">Tin tức</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/giao-duc/tuyen-sinh" class="menu__all-link">Tuyển sinh</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/giao-duc/chan-dung" class="menu__all-link">Chân dung</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/giao-duc/du-hoc" class="menu__all-link">Du học</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/giao-duc/hoc-tieng-anh" class="menu__all-link">Học tiếng Anh</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/giao-duc/trac-nghiem" class="menu__all-link">Trắc nghiệm</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/giao-duc/giao-duc-40" class="menu__all-link">Giáo dục 4.0</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-2 t-4 m-12">
+                                    <span class="menu__all-title" onclick="isOpenCloseSubMenu(12)">Sức khỏe</span>
+                                    <ul class="menu__all-list menu__all-list12">
+                                       
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/suc-khoe/tin-tuc" class="menu__all-link">Tin tức</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/suc-khoe/tu-van" class="menu__all-link">Tư vấn</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/suc-khoe/khoe-dep" class="menu__all-link">Khỏe đẹp</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/suc-khoe/dinh-duong" class="menu__all-link">Dinh dưỡng</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/suc-khoe/dan-ong" class="menu__all-link">Đàn ông</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/suc-khoe/cac-benh" class="menu__all-link">Các bệnh</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/suc-khoe/di-chung-covid" class="menu__all-link">Di chứng covid</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/suc-khoe/vaccine" class="menu__all-link">Vaccine</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-2 t-4 m-12">
+                                    <span class="menu__all-title" onclick="isOpenCloseSubMenu(13)">Đời sống</span>
+                                    <ul class="menu__all-list menu__all-list13">
+                                       
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/doi-song/to-am" class="menu__all-link">Tổ ấm</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/doi-song/bai-hoc-song" class="menu__all-link">Bài học sống</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/doi-song/nha" class="menu__all-link">Nhà</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/doi-song/tin-dung" class="menu__all-link">Tiêu dùng</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/doi-song/cooking" class="menu__all-link">Cooking</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-2 t-4 m-12">
+                                    <span class="menu__all-title" onclick="isOpenCloseSubMenu(14)">Du lịch</span>
+                                    <ul class="menu__all-list menu__all-list14">
+                                       
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/du-lich/diem-den" class="menu__all-link">Điểm đến</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/du-lich/am-thuc" class="menu__all-link">Ẩm thực</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/du-lich/tu-van" class="menu__all-link">Tư vấn</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/du-lich/cam-nang" class="menu__all-link">Cẩm nang</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/du-lich/dau-chan" class="menu__all-link">Dấu chân</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/du-lich/anh" class="menu__all-link">Ảnh</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/du-lich/mo-cua-du-lich" class="menu__all-link">Mở cửa du lịch</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-2 t-4 m-12">
+                                    <span class="menu__all-title" onclick="isOpenCloseSubMenu(15)">Số hóa</span>
+                                    <ul class="menu__all-list menu__all-list15">   
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/so-hoa/cong-nghe" class="menu__all-link">Công nghệ</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/so-hoa/san-pham" class="menu__all-link">Sản phẩm</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/so-hoa/blockchain" class="menu__all-link">Blockchain</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/so-hoa/startup" class="menu__all-link">Startup</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/so-hoa/tech-awards-2022" class="menu__all-link">Tech Awards 2022</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-2 t-4 m-12">
+                                    <span class="menu__all-title" onclick="isOpenCloseSubMenu(16)">Xe</span>
+                                    <ul class="menu__all-list menu__all-list16">   
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/oto-xe-may/thi-truong" class="menu__all-link">Thị trường</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/oto-xe-may/thi-bang-lai" class="menu__all-link">Thi bằng lái</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/oto-xe-may/cam-lai" class="menu__all-link">Cầm lái</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/oto-xe-may/dien-dan" class="menu__all-link">Diễn đàn</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/oto-xe-may/v-car" class="menu__all-link">V-Cars</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/oto-xe-may/mua-ban" class="menu__all-link">Mua bán</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/oto-xe-may/car-awards-2022" class="menu__all-link">Car Awards 2022</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-2 t-4 m-12">
+                                    <span class="menu__all-title" onclick="isOpenCloseSubMenu(17)">Ý kiến</span>
+                                    <ul class="menu__all-list menu__all-list17">   
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/y-kien/thoi-su" class="menu__all-link">Thời sự</a>
+                                        </li>
+                                        <li class="menu__all-item">
+                                            <a href="https://vnexpress.net/y-kien/doi-song" class="menu__all-link">Đời sống</a>
+                                        </li>
+                                    </ul>
+                                </div>                   
+
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="menu__all-sidebar m-12">
+                        <div class="menu__all-sidebar-cover">
+                            <ul class="menu__all-sidebar-cover-list">
+                                <li class="menu__all-sidebar-cover-item">
+                                    <a href="https://vnexpress.net/podcast" class="menu__all-sidebar-cover-link">Podcasts</a>
+                                </li>
+                                <li class="menu__all-sidebar-cover-item">
+                                    <a href="https://vnexpress.net/anh" class="menu__all-sidebar-cover-link">Ảnh</a>
+                                </li>
+                                <li class="menu__all-sidebar-cover-item">
+                                    <a href="https://vnexpress.net/infographics" class="menu__all-sidebar-cover-link">Infographics</a>
+                                </li>
+                            </ul>
+                            <ul class="menu__all-sidebar-cover-list">
+                                <li class="menu__all-sidebar-cover-item border-list">
+                                    <a href="https://vnexpress.net/tin-tuc-24h" class="menu__all-sidebar-cover-link">Mới nhất</a>
+                                </li>
+                                <li class="menu__all-sidebar-cover-item">
+                                    <a href="https://vnexpress.net/tin-xem-nhieu" class="menu__all-sidebar-cover-link">Xem nhiều</a>
+                                </li>
+                                <li class="menu__all-sidebar-cover-item">
+                                    <a href="https://vnexpress.net/tin-nong" class="menu__all-sidebar-cover-link">Tin nóng</a>
+                                </li>
+                            </ul>
+                            <ul class="menu__all-sidebar-cover-list">
+                                <li class="menu__all-sidebar-cover-item border-list">
+                                    <a href="#!" class="menu__all-sidebar-cover-link">Rao vặt</a>
+                                </li>
+                                <li class="menu__all-sidebar-cover-item">
+                                    <a href="#!" class="menu__all-sidebar-cover-link">Startup</a>
+                                </li>
+                                <li class="menu__all-sidebar-cover-item">
+                                    <a href="#!" class="menu__all-sidebar-cover-link">Mua ảnh Vnexpress</a>
+                                </li>
+                                <li class="menu__all-sidebar-cover-item">
+                                    <a href="#!" class="menu__all-sidebar-cover-link">Vhome</a>
+                                </li>
+                                <li class="menu__all-sidebar-cover-item">
+                                    <a href="#!" class="menu__all-sidebar-cover-link">eBox</a>
+                                </li>
+                                <li class="menu__all-sidebar-cover-item">
+                                    <a href="#!" class="menu__all-sidebar-cover-link">eWork</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                 </div>
+             </div>
+        </div>
+
+
+        <main>
+            <div class="container">
+                <div class="row">
+                    <section class="col-8 t-12">
+                        <div class="main__left-header">
+                            <div class="main__left-header--des">
+                                <span class="main__left-header-item">Giáo dục</span>
+                                <span class="main__left-header-time">Thứ bảy, 18/11/2022, 08:30 (GMT+7)</span>
+                            </div>
+                            <h3 class="main__left-header--topic">
+                                Trường Đại học Sư Phạm Kỹ Thuật Đà Nẵng tổ chức lễ kỷ niệm 60 năm thành lập trường.
+                            </h3>
+                        </div>
+    
+                        <article class="main__left-content">
+                            <article class="main__left-content-text">
+                                Trường Đại học Sư phạm Kỹ thuật Đà Nẵng là một trường đại học chuyên ngành về khối ngành 
+                                kỹ thuật tại Việt Nam, được đánh giá là một trong những trường đại học đầu ngành về đào 
+                                tạo khối ngành kỹ thuật tại Miền Trung Việt Nam. Trường trực thuộc hệ thống Đại học Đại
+                                học Đà Nẵng, được xếp vào nhóm đại học trọng điểm quốc gia Việt Nam. Trường đồng thời 
+                                là trung tâm nghiên cứu kỹ thuật lớn của khu vực miền Trung.
+                            </article>
+                            <article class="main__left-content-text">
+                                Trường Đại học Sư phạm Kỹ thuật Đà Nẵng là một trong 6 trường Đại học Sư phạm Kỹ thuật 
+                                của cả nước - đào tạo kỹ thuật lấy ứng dụng làm trọng tâm để giảng dạy, có chức năng 
+                                đào tạo kỹ sư công nghệ, kỹ sư theo định hướng ứng dụng và giáo viên kỹ thuật.
+                            </article>
+                            <article class="main__left-content-text">
+                                Ngày 19/11/2022 trường Đại học Sư Phạm Kỹ Thuật Đà Nẵng sẽ tổ chức lễ kỷ niệm 60 năm thành 
+                                lập trường (1962-2022) tại nhà hát Trưng Vương Đà Nẵng. Đánh dấu cột mốc quan trọng trong 
+                                việc hình thành và phát triển.
+                            </article>
+                            <figure class="main__left-cover-img">
+                                <img src="./images/giaymoi3.jpg" alt="Thư mời 60 năm thành lập UTEUDN" class="main__left-img">
+                                <figcaption class="main__left-img-cap">Ảnh giấy mời lễ kỷ niệm 60 năm thành lập trường Đại học Sư Phạm Kỹ Thuật Đà Nẵng</figcaption>
+                            </figure>
+                            <article class="main__left-content-text">
+                                Đây là dịp để chúng ta tưởng nhớ, tri ân đến những người đã góp công sức cho sự nghiệp 
+                                sáng lập, xây dựng và phát triển ĐH Sư phạm Kỹ thuật 6 thập kỷ qua.
+                            </article>
+                            <article class="main__left-content-text">
+                                Và là thời điểm thích hợp nhất, cơ hội tốt nhất để chúng ta cùng nhau nhìn lại 
+                                chặng đường 60 năm xây dựng và phát triển Trường ĐH Sư phạm Kỹ thuật - ĐH Đà Nẵng.
+                            </article>
+                            <article class="main__left-content-text">                 
+                                <ul class="main__left-content-list">
+                                    <li class="main__left-content-item">                                     
+                                        <h4 class="main__left-content-title ">
+                                            Lịch sử phát triển
+                                        </h4>
+                                        <ul class="main__left-content-sublist">
+                                            <li class="main__left-content-sublist-item">
+                                                <h5 class="main__left-content-sublist-item-title ">Giai đoạn 1960 - 1976</h5>
+                                                <article class="main__left-content-text">
+                                                    <div class="row">
+                                                        <div class="col-4 t-3 m-12 main__left-content-item-text2">
+                                                            Trường Kỹ Thuật Đà Nẵng được xây dựng từ năm 1960. Tháng 9 năm 1962, 
+                                                            Trường khai giảng lớp đầu tiên. Ngay từ năm học đầu tiên, Trường đã 
+                                                            được trang bị Cơ sở vật chất thực hành và giáo cụ đúng tiêu chuẩn 
+                                                            quốc tế thời kỳ đó cho một Trường Kỹ thuật Công nghiệp.
+                                                        </div>
+                                                        <div class="col-8 t-9 m-12">
+                                                            <figure class="main__left-cover-img-2">
+                                                                <img src="./images/ktnghe.jpg" alt="Trường Kỹ Thuật Đà Nẵng khai giảng khóa đầu tiên" class="main__left-img-2">
+                                                                <figcaption class="main__left-img-cap">Ảnh trường Kỹ Thuật Đà Nẵng khai giảng khóa đầu tiên</figcaption>
+                                                            </figure>
+                                                        </div>
+                                                    </div>
+                                                </article>
+                                            </li>
+                                            <li class="main__left-content-sublist-item">
+                                                <h5 class="main__left-content-sublist-item-title ">Giai đoạn 1976 - 1994</h5>
+                                                <article class="main__left-content-text">
+                                                    <div class="row">
+                                                        <div class="col-6 m-12 main__left-content-item-text">
+                                                            Sau ngày đất nước hòa bình và thống nhất, trước yêu cầu cấp bách về việc 
+                                                            tiếp quản và khai thác các cơ sở Công nghiệp sau chiến tranh vào công cuộc 
+                                                            xây dựng đất nước, trường được đổi thành trường Công nhân Kỹ thuật Nguyễn 
+                                                            Văn Trỗi tiếp tục nhiệm vụ đào tạo nguồn nhân lực Kỹ thuật Công nghệ, đặc 
+                                                            biệt là nguồn lực có kiến thức chuyên môn và kỹ năng nghệ cao. Cũng từ đây, 
+                                                            ngôi trường chuyển mình sang một thời kỳ mới. Đối tượng đào tạo hướng đến 
+                                                            các tỉnh khu vực miền Trung và Tây Nguyên, các ban nghề sắp xếp lại để phù 
+                                                            hợp với yêu cầu của đất nước và khu vực. Năm 1987 được Liên Xô viện trợ tái 
+                                                            đầu tư nâng cấp trang thiết bị Công nghiệp qui mô, trường mở rộng loại hình 
+                                                            đào tạo trung cấp kỹ thuật nên chuyến tên thành Trường Kỹ thuật Nguyễn Văn Trỗi.
+                                                        </div>
+                                                        <div class="col-6 m-12">
+                                                            <figure class="main__left-cover-img-2">
+                                                                <img src="./images/tcnvt.png" alt="Ảnh cổng trường Công nhân Kỹ thuật Nguyễn Văn Trỗi" class="main__left-img-3">
+                                                                <figcaption class="main__left-img-cap">Ảnh cổng trường Công nhân Kỹ thuật Nguyễn Văn Trỗi</figcaption>
+                                                            </figure>
+                                                        </div>
+                                                    </div>
+                                                </article>
+                                            </li>
+                                            <li class="main__left-content-sublist-item">
+                                                <h5 class="main__left-content-sublist-item-title ">Giai đoạn 1994 - 2017</h5>
+                                                <article class="main__left-content-text">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <figure class="main__left-cover-img-4">
+                                                                <img src="./images/cdcn2.jpg" alt="Ảnh cổng trường Cao Đẳng Công nghệ" class="main__left-img-4">
+                                                                <figcaption class="main__left-img-cap">Ảnh cổng trường Cao Đẳng Công nghệ</figcaption>
+                                                            </figure>
+                                                        </div>
+                                                        <div class="col-12 main__left-content-item-text">
+                                                            Theo nghị định 32/CP ngày 04/04/1994 của Chính phủ, trường trở thành một thành viên
+                                                            của Đại học Đà Nẵng mang tên Trường Cao đẳng Công nghệ. Là một cơ sở đào tạo quốc 
+                                                            gia phục vụ cho nhu cầu phát triển kinh tế - xã hội, trường Cao đẳng Công nghệ 
+                                                            Đà Nẵng có chức năng nhiệm vụ đào tạo cán bộ kỹ thuật và công nghệ có trình độ 
+                                                            cao đẳng, trung học chung nghiệp tạo Công nhân lành nghề, đồng thời cũng là 
+                                                            trung tâm nghiên cứu khoa học và chuyển giao công nghệ của khu vực miền Trung - Tây Nguyên.
+                                                        </div>
+                                                    </div>
+                                                </article>
+                                            </li>
+                                            <li class="main__left-content-sublist-item">
+                                                <h5 class="main__left-content-sublist-item-title ">Giai đoạn 2017 - nay</h5>
+                                                <article class="main__left-content-text">
+                                                    <div class="row">
+                                                        <div class="col-12 main__left-content-item-text">   
+                                                            <article class="main__left-content-text">
+                                                                Trường Đại học Sư phạm Kỹ thuật là trường công lập, thành viên của Đại học Đà Nẵng được 
+                                                                thành lập năm 2017 theo quyết định số 1749/QĐ-TTg của Chính Phủ ngày 08/11/2017. 
+                                                                Là trung tâm đào tạo nguồn nhân lực kỹ thuật và công nghệ phục vụ cho nhu cầu phát 
+                                                                triển kinh tế - xã hội khu vực miền Trung - Tây Nguyên.
+                                                            </article>
+                                                            <article class="main__left-content-text">
+                                                                Trải qua quá trình phát triển Trường ĐH Sư Phạm Kỹ thuật đã có
+                                                                Đội ngũ cán bộ 216 người, trong đó có 154 giảng viên gồm 3 Phó Giáo sư, 
+                                                                50 Tiến sĩ, 99 Thạc sĩ, 5 Giảng viên cao cấp và Giảng viên chính, 85% Giảng viên có trình 
+                                                                độ sau Đại học. Phần lớn cán bộ giảng dạy được đào tạo hay thực tập chuyên môn ở nước ngoài. 
+                                                            </article>
+                                                            <article class="main__left-content-text">
+                                                                Bên cạnh lực lượng cơ hữu, trường còn được sự hỗ trợ của các Giáo sư, Phó Giáo sư, Tiến sĩ và 
+                                                                đội ngũ Giảng viên chính của các trường thành viên Đại học Đà Nẵng, đặc biệt là trường Đại học 
+                                                                Bách khoa Đà Nẵng trong đào tạo cấp cao đẳng. Nhà trường đang tiếp tục tăng cường năng lực và 
+                                                                chuẩn hoá đội ngũ cán bộ giảng dạy để đáp ứng yêu cầu nâng cao chất lượng đào tạo, đảm bảo kịp 
+                                                                thời quy mô ngày càng tăng và trình độ khoa học công nghệ ngày càng cao theo nhu cầu phát triển kinh tế, xã hội.
+                                                            </article>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <figure class="main__left-cover-img-4">
+                                                                <img src="./images/uteudn.png" alt="Ảnh cổng trường Cao Đẳng Công nghệ" class="main__left-img-4">
+                                                                <figcaption class="main__left-img-cap">Ảnh cổng trường ĐH Sư phạm Kỹ thuật</figcaption>
+                                                            </figure>
+                                                        </div>
+                                                        <article class="main__left-content-text main__left-content-item-text">
+                                                            Từ cơ sở vật chất của trường Kỹ thuật Nguyễn Văn Trỗi Đà Nẵng trước đây cùng với sự đầu tư thường xuyên của 
+                                                            Đại học Đà Nẵng, hiện nay cơ sở vật chất của trường Đại học Sư phạm Kỹ thuật Đà Nẵng khá 
+                                                            khang trang và hiện đại. Trường có diện tích 42.000 m² bao gồm 6 khu vực: khu Giảng đường, 
+                                                            khu thí nghiệm Cơ - Điện - Điện tử, khu thí nghiệm Hoá - Xây dựng, khu các xưởng Thực hành, 
+                                                            khu Hành chính, khu Ký túc xá và khu sân bãi Thể thao. Trường hiện có 42 phòng học với hơn 
+                                                            2000 chỗ ngồi, trong đó có gần 50% được trang bị máy đèn chiếu đa chức năng, projector, 
+                                                            14 xưởng thực hành với hơn 3000 m², 22 phòng thí nghiệm (PTN), 5 phòng máy với hơn 200 
+                                                            máy tính được nối mạng.
+                                                        </article>
+                                                    </div>
+                                                </article>
+                                            </li>
+                                        </ul>
+    
+                                    </li>
+                                    <li class="main__left-content-item">
+                                        <h4 class="main__left-content-title ">
+                                            Khoa học công nghệ
+                                        </h4>
+    
+                                        <article class="main__left-content-text">
+                                            Từ năm 2016 đến năm 2021, CBGV của nhà trường đã thực hiện và nghiệm thu 
+                                            thành công hàng trăm đề tài KHCN các cấp, tiêu biểu như: 01 đề tài cấp Nhà 
+                                            nước trọng điểm, 02 đề tài Nafosted, 11 đề tài cấp Bộ, 02 đề tài cấp Thành phố, 
+                                            24 đề tài cấp Đại học Đà Nẵng và 180 đề tài cấp Cơ sở. 
+                                        </article>
+    
+                                        <article class="main__left-content-text">
+                                            Trong đó, nhiều đề tài có giá trị nổi bật, đã được đưa vào ứng dụng trong thực tiễn, điển hình như đề tài 
+                                            Nghiên cứu, phát triển dịch vụ hỗ trợ và quản lý du khách theo định hướng thành phố thông minh và chính phủ điện tử;
+                                            Nghiên cứu, ứng dụng hệ thống giao thông thông minh trong hoạt động quản lý giao thông ở một số đô thị lớn miền Trung Việt Nam,... 
+                                        </article>
+                                        <article class="main__left-content-text">
+                                            Nhiều đề tài nghiên cứu, chế tạo được các thiết bị phục vụ công tác đào tạo thực hành, thí nghiệm như 
+                                            Thiết kế mô hình ổn định quả bóng trong ống khí thẳng đứng bằng thuật toán PID; 
+                                            Thiết kế và chế tạo thiết bị nấu hợp kim nhôm phục vụ giảng dạy; 
+                                            Chế tạo mô hình thực hành điều khiển điện - khí nén tích hợp,…
+                                        </article>
+    
+                                        <figure class="main__left-cover-img-4">
+                                            <img src="./images/khcn1.png" alt="Phan Cao Thọ-Hiệu trưởng nhà trường trao tặng Máy sát khuẩn tự động cho đại diện Bệnh viện Đa khoa Hải Châu" class="main__left-img-4">
+                                            <figcaption class="main__left-img-cap">Ảnh PGS.TS. Phan Cao Thọ-Hiệu trưởng nhà trường trao tặng Máy sát khuẩn tự động cho đại diện Bệnh viện Đa khoa Hải Châu</figcaption>
+                                        </figure>
+    
+                                        <section class="sectionKHCN">
+                                            <article class="main__left-content-text">
+                                                Từ năm 2016 đến năm 2021, đã có 309 đề tài sinh viên NCKH, nhiều đề tài mang tính thực tiễn, được áp dụng trong học 
+                                                tập và cuộc sống. Nhiều sản phẩm của đề tài đạt được giải thưởng cao như: 
+                                                “Thiết bị hỗ trợ an toàn cho người có chấn thương ở chân” đạt Giải Nhất tại Diễn đàn KH&CN lần thứ 5 tại Khu vực miền Trung năm 2017; 
+                                                “Gậy thông minh hỗ trợ người già”đạt Giải Nhất - Cuộc thi Khởi nghiệp công nghệ do VinTech City và Trung tâm Hỗ trợ Thanh niên Khởi 
+                                                nghiệp tổ chức năm 2019; “Thiết bị quan trắc không khí - cảnh báo cháy nổ, khí độc cacbon monoxit” đạt Giải Nhì - Giải thưởng SV NCKH Đại học Đà Nẵng năm 2020,….
+                                            </article>
+                                            <figure class="main__left-cover-img-4">
+                                                <img src="./images/khcn2.jpg" alt="Thư mời 60 năm thành lập UTEUDN" class="main__left-img-4">
+                                                <figcaption class="main__left-img-cap">Ảnh Sinh viên Trường Đại học Sư phạm Kỹ thuật - ĐHĐN đạt Giải Nhất Cuộc thi Ươm mầm ý tưởng khởi nghiệp sáng tạo do VinTech City tổ chức</figcaption>
+                                            </figure>
+                                        </section>
+    
+                                        <span class="more1" onclick="isOpenMore(1)">Xem thêm</span>
+                                        <span class="hide1" onclick="isCloseMore(1)">Ẩn bớt</span>
+    
+                                    </li>
+                                    <li class="main__left-content-item">
+                                        <h4 class="main__left-content-title ">
+                                            Hợp tác quốc tế
+                                        </h4>
+    
+                                        <article class="main__left-content-text">
+                                            Các hoạt động Hợp tác quốc tế (HTQT) của nhà trường đang ngày càng mở rộng, phục vụ tích cực 
+                                            cho việc nâng cao chất lượng đào tạo và phát triển hoạt động nghiên cứu khoa học thông qua 
+                                            việc hợp tác chặt chẽ với các đối tác, liên kết với các nguồn lực trong nước cũng như nước 
+                                            ngoài đồng thời thúc đẩy mối quan hệ hữu nghị và cùng phát triển giữa nhà trường và doanh nghiệp
+                                        </article>
+    
+                                        <article class="main__left-content-text">
+                                            Hàng năm, nhà trường luôn nỗ lực tìm kiếm các đối tác mới để hợp tác, ký kết các MoU/MoA mới 
+                                            để nâng cao chất lượng hoạt động HTQT của nhà trường, đồng thời thường xuyên giữ liên lạc với 
+                                            các đối tác truyền thống để tăng cường các hoạt động hợp tác theo chiều sâu. Với mục tiêu 
+                                            không ngừng sáng tạo trong công tác HTQT, nhà trường đã chủ động tăng cường công tác ngoại 
+                                            giao, hợp tác với các đối tác từ nước
+                                        </article>
+                                        <article class="main__left-content-text">
+                                            - Hợp tác tăng cường giới thiệu việc làm cho sinh viên trong dự án V2WORK, trao đổi sinh 
+                                            viên thực tập ngắn hạn tại các trường đại học như: Trường Đại học Chaopraya - Thái Lan, 
+                                            Đại học Okayama - Nhật Bản, Trường Cao đẳng Quốc gia Công nghệ Anan - Nhật Bản, Đại 
+                                            học Côte d'Azur - Cộng hoà Pháp, Đại học Hamk - Phần Lan…
+                                        </article>
+    
+                                        <figure class="main__left-cover-img-4">
+                                            <img src="./images/htqt1.jpg" alt="PGS.TS. TS Phan Cao Thọ - Hiệu trưởng nhà trường cùng lãnh đạo các Phòng, Khoa đã đón tiếp và làm việc với đại diện Công ty Bridge và Công ty Yonemori, Nhật Bản." class="main__left-img-4">
+                                            <figcaption class="main__left-img-cap">Ảnh PGS.TS. TS Phan Cao Thọ - Hiệu trưởng nhà trường cùng lãnh đạo các Phòng, Khoa đã đón tiếp và làm việc với đại diện Công ty Bridge và Công ty Yonemori, Nhật Bản.</figcaption>
+                                        </figure>
+    
+                                        <section class="sectionHTQT">
+                                            <article class="main__left-content-text">
+                                                - Hợp tác với các tổ chức, doanh nghiệp trong và ngoài nước như: Công ty Thang máy 
+                                                Mitsubishi - Nhật Bản, Công ty Daikin - Việt Nam, Công ty Sekisho - Nhật Bản, Công ty 
+                                                FULLTIMESYSTEM - Nhật Bản, Tổ chức giáo dục Đông Nam Á SEAMEO INNOTECH…
+                                            </article>
+                                            <article class="main__left-content-text">
+                                                - Hợp tác với các đối tác triển khai 03 dự án thuộc cộng đồng Châu Âu ERASMUS+: Dự án EMVITET, 
+                                                Dự án MesFia, Dự án Digi-CHE-Asia… với mục đích tăng cường năng lực cho giảng viên và sinh viên 
+                                                Nhà trường trong thời đại số, thúc đẩy nguồn cung cấp năng lượng tái tạo cho các khu vực biệt 
+                                                lập và nâng cao chương trình đào tạo trong các môn học như Robotics, Robot…
+                                            </article>
+                                            <figure class="main__left-cover-img-4">
+                                                <img src="./images/htqt2.jpg" alt="Lễ ký kết thỏa thuận hợp tác Trường Đại học Sư phạm Kỹ thuật cùng Trường Đại học khoa học Ứng dụng Häme (HAMK)" class="main__left-img-4">
+                                                <figcaption class="main__left-img-cap">Lễ ký kết thỏa thuận hợp tác Trường Đại học Sư phạm Kỹ thuật cùng Trường Đại học khoa học Ứng dụng Häme (HAMK)</figcaption>
+                                            </figure>
+                                            <article class="main__left-content-text">
+                                                - Tổ chức các buổi Ngày hội việc làm cho sinh viên như: nhà trường tổ chức tuyển sinh, đào tạo cho 
+                                                sinh viên năm cuối tại các công ty thuộc dự án V2WORK, tổ chức các buổi tập huấn Online về cách 
+                                                viết CV với các công ty Nhật Bản như: 20 công ty thuộc tỉnh TOCHIGI- Nhật Bản, 15 công ty từ 
+                                                Nhật Bản, Thái Lan, Việt Nam trong ngày hội Jobfair.
+                                            </article>
+                                            <article class="main__left-content-text">
+                                                Mục tiêu xuyên suốt của nhà trường trong hoạt động HTQT là cung cấp cho giảng viên và sinh viên những 
+                                                kinh nghiệm quốc tế trong đào tạo và nghiên cứu, nâng cao kiến thức và khả năng làm việc của giảng viên 
+                                                và sinh viên thông qua các khoá đào tạo chuyên sâu và các cơ hội trao đổi Giảng viên, Sinh viên trong 
+                                                khuôn khổ các chương trình dự án hợp tác. 
+                                            </article>
+                                        </section>
+    
+                                        <span class="more2" onclick="isOpenMore(2)">Xem thêm</span>
+                                        <span class="hide2" onclick="isCloseMore(2)">Ẩn bớt</span>
+                                    </li>
+                                </ul>
+                            </article>
+    
+                            <article class="content__related">
+                                <ul class="content__related-list">
+                                    <li class="content__related-item">
+                                        <img src="./images/lekhanhthanhNLT.jpg" alt="" class="content__related-img m-12">
+                                        <div class="content__related-info m-12">
+                                            <h6 class="content__related-title">
+                                                Trường đại học vận hành phòng nghiên cứu và đào tạo thực hành chuyển đổi số
+                                            </h6>
+                                            <p class="content__related-des">
+                                                Với hệ thống thiết bị hiện đại, nhà trường sẽ triển khai các khóa đào tạo, dự án chuyển đổi số cho các cơ quan, doanh nghiệp trên nền tảng công nghệ 4.0.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="content__related-item">
+                                        <img src="./images/letotnghiep2022.jpg" alt="" class="content__related-img m-12">
+                                        <div class="content__related-info m-12">
+                                            <h6 class="content__related-title">
+                                                Trường Đại học Sư phạm Kỹ thuật-ĐHĐN tổ chức Lễ Trao Bằng Tốt nghiệp và Ngày hội việc làm năm 2022
+                                            </h6>
+                                            <p class="content__related-des">
+                                                Ngày 12/11, Trường Đại học (ĐH) Sư phạm Kỹ thuật-Đại học Đà Nẵng (ĐHĐN) vừa long trọng tổ chức Lễ Trao Bằng Tốt nghiệp ĐH cho 627 tân Kỹ sư, Cử nhân, trong đó có 170 sinh viên (SV) khóa tuyển sinh 2017 và 457 SV khóa tuyển sinh 2018.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="content__related-item">
+                                        <img src="./images/lekhanhthanhnhalamviec.jpg" alt="" class="content__related-img m-12">
+                                        <div class="content__related-info m-12">
+                                            <h6 class="content__related-title">
+                                                Lễ khánh thành Nhà làm việc trường Đại học Sư phạm Kỹ thuật Đà Nẵng.
+                                            </h6>
+                                            <p class="content__related-des">
+                                                Với quy mô đều cùng 05 tầng, thuộc công trình dân dụng cấp II, Nhà làm việc Trường ĐH Sư phạm Kỹ thuật-ĐHĐN có tổng diện tích sàn xây dựng 6.950 m2 và Nhà học tập, thực hành, thí nghiệm Khoa Y-Dược ĐHĐN có tổng diện tích sàn xây dựng 8.127 m2.
+                                                Với hệ thống thiết bị hiện đại, nhà trường sẽ triển khai các khóa đào tạo, dự án chuyển đổi số cho các cơ quan, doanh nghiệp trên nền tảng công nghệ 4.0.
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </article>
+    
+                        </article>
+                    </section>
+                    <section class="col-4 pad-left-64">
+                        <div class="sidebar t-0">
+                            <div class="sidebar__moreview">
+                                <div class="sidebar__moreview-text">
+                                    <a href="https://vnexpress.net/tin-xem-nhieu">
+                                        <span>Xem nhiều</span> 
+                                    </a>
+                                </div>
+                                <article class="sidebar__moreview-item">
+                                    <a href="https://vnexpress.net/dan-kherson-don-quan-doi-ukraine-vao-thanh-pho-4535089.html">    
+                                        <img src="./images/news1.png" alt="" class="sidebar__moreview-img">
+                                    </a>
+                                    <a href="https://vnexpress.net/dan-kherson-don-quan-doi-ukraine-vao-thanh-pho-4535089.html" class="sidebar__moreview-title sidebar__moreview-title--capital">
+                                        Dân Kherson đón quân đội Ukraine vào thành phố 
+                                    </a>
+                                </article>
+                                <article class="sidebar__moreview-item">
+                                    <a href="https://vnexpress.net/dang-dan-chu-thang-o-nevada-kiem-soat-thuong-vien-my-4535385-tong-thuat.html" class="sidebar__moreview-title">
+                                        Đảng Dân chủ thắng ở Nevada, kiểm soát Thượng viện Mỹ
+                                    </a>
+                                </article>
+                                <article class="sidebar__moreview-item">
+                                    <a href="https://vnexpress.net/khoanh-khac-vu-no-danh-sap-cau-tren-dap-thuy-dien-kherson-4535350.html" class="sidebar__moreview-title">
+                                        Khoảnh khắc vụ nổ đánh sập cầu trên đập thủy điện Kherson 
+                                    </a>
+                                </article>
+                                <article class="sidebar__moreview-item">
+                                    <a href="https://vnexpress.net/thu-tuong-duc-hom-nay-tham-viet-nam-4535431.html" class="sidebar__moreview-title">
+                                        Thủ tướng Phạm Minh Chính chủ trì lễ đón Thủ tướng Đức
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="sidebar__sponsor">
+                                <span class="sidebar__sponsor-title">Tin tài trợ</span>
+                                <a href="#!">
+                                    <article class="sidebar__sponsor-item">
+                                        <figure class="sidebar__sponsor-cover">
+                                            <img src="./images/qc1.jpeg" alt="" class="sidebar__sponsor-img">
+                                            <figcaption class="sidebar__sponsor-img-name">BoniSleep - USA</figcaption>
+                                        </figure>
+                                        <h6 class="sidebar__sponsor-img-title">
+                                            Vui vẻ, tỉnh tảo khi có giấc ngủ ngon.
+                                        </h6>
+                                    </article>
+                                </a>
+                                <a href="#!">
+                                    <article class="sidebar__sponsor-item">
+                                        <figure class="sidebar__sponsor-cover">
+                                            <img src="./images/qc2.jpeg" alt="" class="sidebar__sponsor-img">
+                                            <figcaption class="sidebar__sponsor-img-name">BoniSleep - USA</figcaption>
+                                        </figure>
+                                        <h6 class="sidebar__sponsor-img-title">
+                                            Thảo dược hỗ trợ sức khỏe người tiểu đường
+                                        </h6>
+                                    </article>
+                                </a>
+                                <a href="#!">
+                                    <article class="sidebar__sponsor-item">
+                                        <figure class="sidebar__sponsor-cover">
+                                            <img src="./images/qc3.jpeg" alt="" class="sidebar__sponsor-img">
+                                            <figcaption class="sidebar__sponsor-img-name">BoniSleep - USA</figcaption>
+                                        </figure>
+                                        <h6 class="sidebar__sponsor-img-title">
+                                            Tiểu đường bị đẩy lùi đơn giản bằng cách sau
+                                        </h6>
+                                    </article>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+
+        <footer class="container">
+            <div class="row footer__cover-list">
+                <div class="col-2-4 t-4">
+                    <ul class="footer__list footer__list-main">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Trang chủ</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="https://vnexpress.net/video" class="footer__link">Video</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="https://vnexpress.net/podcast" class="footer__link">Podcasts</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="https://vnexpress.net/anh" class="footer__link">Ảnh</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="https://vnexpress.net/infographics" class="footer__link">Infographics</a>
+                        </li>
+                        <li class="footer__item border-list">
+                            <a href="https://vnexpress.net/tin-tuc-24h" class="footer__link">Mới nhất</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="https://vnexpress.net/tin-xem-nhieu" class="footer__link">Xem nhiều</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="https://vnexpress.net/tin-nong" class="footer__link">Tin nóng</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-2-4 t-4">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="https://vnexpress.net/thoi-su" class="footer__link">Thời sự</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="https://vnexpress.net/goc-nhin" class="footer__link">Góc nhìn</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="https://vnexpress.net/the-gioi" class="footer__link">Thế giới</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="https://vnexpress.net/kinh-doanh" class="footer__link">Kinh doanh</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="col-2-4 t-4">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="https://vnexpress.net/the-thao" class="footer__link">Thể thao</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="https://vnexpress.net/phap-luat" class="footer__link">Pháp luật</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="https://vnexpress.net/giao-duc" class="footer__link">Giáo dục</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="https://vnexpress.net/suc-khoe" class="footer__link">Sức khỏe</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="https://vnexpress.net/doi-song" class="footer__link">Đời sống</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="https://vnexpress.net/du-lich" class="footer__link">Du lịch</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-2-4 t-4">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="https://vnexpress.net/khoa-hoc" class="footer__link">Khoa học</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="https://vnexpress.net/so-hoa" class="footer__link">Số hóa</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="https://vnexpress.net/oto-xe-may" class="footer__link">Xe</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="https://vnexpress.net/y-kien" class="footer__link">Ý kiến</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="https://vnexpress.net/tam-su" class="footer__link">Tâm sự</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="https://vnexpress.net/hai" class="footer__link">Hài</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-2-4 t-4 t-4-0">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#!" class="footer__link">Rao vặt</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#!" class="footer__link">Startup</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#!" class="footer__link">Mua ảnh Vnexpress</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#!" class="footer__link">Vhome</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#!" class="footer__link">eBox</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#!" class="footer__link">eWork</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="row">
+                    <div class="col-4 m-12">
+                        <p class="footer__copyright-col">
+                            <strong>Báo tiếng Việt nhiều người xem nhất </strong><br>
+                            Thuộc bộ khoa học công nghệ<br>
+                            Số giấy phép: 548/GP-BTTTT ngày 24/08/2021
+                        </p>
+                    </div>
+                    <div class="col-4 m-12">
+                        <p class="footer__copyright-col">
+                            Tổng biên tập: <strong>Nguyễn Văn Thanh Thiện</strong><br>
+                            Mã sinh viên: 21115053120247 <br>
+                            Lớp sinh hoạt: 21T2 <br>
+                            Địa chỉ: An Tân-Hòa Phong-Hòa Vang-Đà Nẵng <br>
+                            Điện thoại: 0338462602
+                        </p>
+                    </div>
+                    <div class="col-4 m-12">
+                        <p class="footer__copyright-col">
+                            © 1997-2022. Toàn bộ bản quyền thuộc VnExpress
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() >= '71') {
+                    $('header').addClass('sticky');
+                    $('nav').addClass('fixed');
+                    $('main').addClass('pad-top-121');
+                } else {
+                    $('header').removeClass('sticky');
+                    $('nav').removeClass('fixed');
+                    $('main').removeClass('pad-top-121');
+                }
+            })
+        })
+
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > '5500') {
+                    $('.sidebar__moreview').addClass('sidebar__fixed2');      
+                } 
+                else {
+                    $('.sidebar__moreview').removeClass('sidebar__fixed2');      
+                }
+                if ($(this).scrollTop() > '101') {
+                    $('.sidebar__moreview').addClass('sidebar__fixed');      
+                } else {
+                    $('.sidebar__moreview').removeClass('sidebar__fixed');
+                }
+            })
+        })
+
+        function isOpenMore(stt) {
+            var moreKHCN = document.querySelector('.sectionKHCN');
+            var moreHTQT = document.querySelector('.sectionHTQT');
+            var more1btn  = document.querySelector('.more1');
+            var more2btn  = document.querySelector('.more2');
+            var hide1btn  = document.querySelector('.hide1');
+            var hide2btn  = document.querySelector('.hide2');
+            if(stt == 1) {
+                moreKHCN.style.display='block';
+                more1btn.style.display='none';
+                hide1btn.style.display='inline-block';         
+            }
+            if(stt == 2) {
+                moreHTQT.style.display='block';
+                more2btn.style.display='none';
+                hide2btn.style.display='inline-block';    
+            }
+        }
+
+        function isCloseMore(stt) {
+            var moreKHCN = document.querySelector('.sectionKHCN');
+            var moreHTQT = document.querySelector('.sectionHTQT');
+            var more1btn  = document.querySelector('.more1');
+            var more2btn  = document.querySelector('.more2');
+            var hide1btn  = document.querySelector('.hide1');
+            var hide2btn  = document.querySelector('.hide2');
+            if(stt == 1) {
+                moreKHCN.style.display='none';
+                more1btn.style.display='inline-block';
+                hide1btn.style.display='none';         
+            }
+            if(stt == 2) {
+                moreHTQT.style.display='none';
+                more2btn.style.display='inline-block';
+                hide2btn.style.display='none';    
+            }
+        }
+
+        function isOpenAllMenu() {
+            var allMenu  = document.querySelector('.menu__all');
+            allMenu.style.display='block';
+        }
+        function isCloseAllMenu() {
+            var allMenu  = document.querySelector('.menu__all');
+            allMenu.style.display='none';
+        }
+
+        function isOpenAllMenuMobile() {
+            var iconX  = document.querySelector('.menu__icon-xmark');
+            var iconMenu  = document.querySelector('.menu__icon-category');
+            var html  = document.querySelector('html');
+            var allMenu  = document.querySelector('.menu__all');
+            iconX.style.display='block';
+            iconMenu.style.display='none';
+            html.style.overflow='hidden';
+            allMenu.style.display='block';
+        }
+        function isCloseAllMenuMobile() {
+            var iconX  = document.querySelector('.menu__icon-xmark');
+            var iconMenu  = document.querySelector('.menu__icon-category');
+            var html  = document.querySelector('html');
+            var allMenu  = document.querySelector('.menu__all');
+            iconX.style.display='none';
+            iconMenu.style.display='block';
+            html.style.overflow='hidden';
+            allMenu.style.display='none';
+        }
+        function isOpenCloseSubMenu(stt) {
+            var subMenu1 = document.querySelector('.menu__all-list1');
+            var subMenu2 = document.querySelector('.menu__all-list2');
+            var subMenu3 = document.querySelector('.menu__all-list3');
+            var subMenu4 = document.querySelector('.menu__all-list4');
+            var subMenu5 = document.querySelector('.menu__all-list5');
+            var subMenu6 = document.querySelector('.menu__all-list6');
+            var subMenu7 = document.querySelector('.menu__all-list7');
+            var subMenu8 = document.querySelector('.menu__all-list8');
+            var subMenu9 = document.querySelector('.menu__all-list9');
+            var subMenu10 = document.querySelector('.menu__all-list10');
+            var subMenu11 = document.querySelector('.menu__all-list11');
+            var subMenu12 = document.querySelector('.menu__all-list12');
+            var subMenu13 = document.querySelector('.menu__all-list13');
+            var subMenu14 = document.querySelector('.menu__all-list14');
+            var subMenu15 = document.querySelector('.menu__all-list15');
+            var subMenu16 = document.querySelector('.menu__all-list16');
+            var subMenu17 = document.querySelector('.menu__all-list17');
+            
+
+            switch (stt) {
+                case 1:
+                    if (subMenu1.style.display == 'block') subMenu1.style.display = 'none';
+                    else subMenu1.style.display = 'block';
+                    break;
+                case 2:
+                    if (subMenu2.style.display == 'block') subMenu2.style.display = 'none';
+                    else subMenu2.style.display = 'block';
+                    break;
+            
+                case 3:
+                    if (subMenu3.style.display == 'block') subMenu3.style.display = 'none';
+                    else subMenu3.style.display = 'block';
+                    break;
+                case 4:
+                    if (subMenu4.style.display == 'block') subMenu4.style.display = 'none';
+                    else subMenu4.style.display = 'block';
+                    break;
+                case 5:
+                    if (subMenu5.style.display == 'block') subMenu5.style.display = 'none';
+                    else subMenu5.style.display = 'block';
+                    break;
+                case 6:
+                    if (subMenu5.style.display == 'block') subMenu5.style.display = 'none';
+                    else subMenu5.style.display = 'block';
+                    break;
+                    case 1:
+                    if (subMenu6.style.display == 'block') subMenu6.style.display = 'none';
+                    else subMenu6.style.display = 'block';
+                    break;
+                case 7:
+                    if (subMenu7.style.display == 'block') subMenu7.style.display = 'none';
+                    else subMenu7.style.display = 'block';
+                    break;
+                case 8:
+                    if (subMenu8.style.display == 'block') subMenu8.style.display = 'none';
+                    else subMenu8.style.display = 'block';
+                    break;
+                case 9:
+                    if (subMenu9.style.display == 'block') subMenu9.style.display = 'none';
+                    else subMenu9.style.display = 'block';
+                    break;
+                case 10:
+                    if (subMenu10.style.display == 'block') subMenu10.style.display = 'none';
+                    else subMenu10.style.display = 'block';
+                    break;
+                case 11:
+                    if (subMenu11.style.display == 'block') subMenu11.style.display = 'none';
+                    else subMenu11.style.display = 'block';
+                    break;
+                case 12:
+                    if (subMenu12.style.display == 'block') subMenu12.style.display = 'none';
+                    else subMenu12.style.display = 'block';
+                    break;
+                case 13:
+                    if (subMenu13.style.display == 'block') subMenu13.style.display = 'none';
+                    else subMenu13.style.display = 'block';
+                    break;
+                case 14:
+                    if (subMenu14.style.display == 'block') subMenu14.style.display = 'none';
+                    else subMenu14.style.display = 'block';
+                    break;
+                case 15:
+                    if (subMenu15.style.display == 'block') subMenu15.style.display = 'none';
+                    else subMenu15.style.display = 'block';
+                    break;
+                case 16:
+                    if (subMenu16.style.display == 'block') subMenu16.style.display = 'none';
+                    else subMenu16.style.display = 'block';
+                    break;
+                case 17:
+                    if (subMenu17.style.display == 'block') subMenu17.style.display = 'none';
+                    else subMenu17.style.display = 'block';
+                    break;
+            }
+            
+        }
+
+    </script>
+</body>
+</html>

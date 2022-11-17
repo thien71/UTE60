@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: inherit;
+    font-size: 100%;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 8px 0;
+}
+
+p {
+    margin: 16px 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-0 {
+    display: none;
+}
+
+.col-2 {
+    flex: 16.66667%;
+}
+
+.col-2-0 {
+    margin-right: 16.66667%;
+}
+
+.col-2-4 {
+    flex: 20%;
+}
+
+.col-3 {
+    flex: 25%;
+}
+
+.col-4 {
+    flex: 33.33333%;
+}
+
+.col-5 {
+    flex: 41.66667%;
+}
+
+.col-6 {
+    flex: 50%;
+}
+
+.col-8 {
+    flex: 66.66667%;
+}
+
+.col-9 {
+    flex: 75%;
+}
+
+.col-10 {
+    flex: 83.33333%;
+}
+
+.col-12 {
+    flex: 100%;
+}
+
+.pad-0-8 {
+    padding: 0 8px;
+}
+
+.pad-0-16 {
+    padding: 0 16px;
+}
+
+.pad-32-0 {
+    padding: 32px 0;
+}
+
+.pad-48-128 {
+    padding: 48px 128px;
+}
+.pad-left-64 {
+    padding-left: 64px;
+}
+
+.mar-0--8 {
+    margin: 0 -8px;
+}
+
+.mar-0-8 {
+    margin: 0 8px;
+}
+
+.mar-0--16 {
+    margin: 0 -16px;
+}
+
+.fts-24 {
+    font-size: 2.4rem;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
